@@ -25,7 +25,7 @@
     "@babel/register": "^7.9.0",
     "@colyseus/monitor": "^0.11.0",
     "@colyseus/social": "^0.10.2",
-    "ammo.js": "github:kripken/ammo.js",
+    "ammo.js": "github:kripken/ammo.js#aab297a4164779c3a9d8dc8d9da26958de3cb778",
     "babylonjs": "^4.1.0",
     "babylonjs-loaders": "^4.1.0",
     "colyseus": "^0.12.0",
