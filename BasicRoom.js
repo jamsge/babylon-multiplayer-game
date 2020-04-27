@@ -136,7 +136,6 @@ class State extends Schema {
 			// If the player is grounded...
 			if (grounded){
 				normal = playerRaycast(id);
-				console.log(normal);
 				// ... and if the jump message is sent and it has been "jumpCooldown" m.s. after the last jump, do a jump in the intended direction
 				if (movement.jump && elapsedTime > jumpCooldown + scope.players[id].lastJump){
 					scope.players[id].lastJump = elapsedTime;
