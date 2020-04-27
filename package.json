@@ -1,0 +1,39 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "npm init template for bootstraping an empty Colyseus project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon start.js",
+    "start": "node start.js",
+    "loadtest": "colyseus-loadtest loadtest/example.js --room my_room --numClients 2",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/colyseus/create-colyseus/issues"
+  },
+  "homepage": "https://github.com/colyseus/create-colyseus#readme",
+  "devDependencies": {
+    "@colyseus/loadtest": "^0.12.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/register": "^7.9.0",
+    "@colyseus/monitor": "^0.11.0",
+    "@colyseus/social": "^0.10.2",
+    "ammo.js": "github:kripken/ammo.js",
+    "babylonjs": "^4.1.0",
+    "babylonjs-loaders": "^4.1.0",
+    "colyseus": "^0.12.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "ip": "^1.1.5",
+    "path": "^0.12.7",
+    "xhr2": "^0.2.0"
+  }
+}

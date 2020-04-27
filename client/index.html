@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Generic name</title>
+    <style>
+      html, body {
+          margin: 0;
+          height: 100%;
+      }
+      #render {
+          width: 100%;
+          height: 100%;
+          display: none;
+      }
+			h5 {
+				position: absolute;
+				display: block;
+				z-index: 99;
+				left: 3%;
+				top: 0%;
+			}
+			#game-elements{
+				display:none;
+			}
+			#menu-elements{
+				display:block;
+			}
+			.ui{
+				position: absolute;
+				display: block;
+			}
+			#crosshair{
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				scale: 5%;
+				width: 30px;
+				height: 30px;
+			}
+    </style>
+  </head>
+	<div id="menu-elements">
+		<button id="start-game" onclick="init()">Start the game</button>
+	</div>
+	<div id="game-elements">
+		<h5 class="ui">Welcome to this simple multiplayer demo :) Press g to switch between an orbit and FPS camera</h5>
+		<img id = "crosshair" class="ui" src = "assets/crosshair-2.png">
+	</div>
+	<canvas id="render"></canvas>
+  <body>
+		<script src="./js/lib/colyseus.js"></script>
+		<script src="./js/lib/keypress/keypress.js"></script>
+		<script type="module" src="./js/game.js"></script>
+		<script type="module" src="./js/main.js"></script>
+  </body> 
+</html>
