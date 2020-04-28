@@ -195,7 +195,7 @@ function initSimpleLevel(){
 
 	// });
 	
-	BABYLON.SceneLoader.ImportMesh("", "http://" + process.env.URL + "/assets/models/", "test_import_8.babylon", scene, function (newMeshes) {
+	BABYLON.SceneLoader.ImportMesh("", "http://" + (process.env.URL || "localhost:2567") + "/assets/models/", "test_import_8.babylon", scene, function (newMeshes) {
 		for (let i = 0; i < newMeshes.length; i++){
 			newMeshes[i].position.z += 20;
 			staticMeshList.push(newMeshes[i]);
