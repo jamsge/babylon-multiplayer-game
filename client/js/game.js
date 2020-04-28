@@ -103,7 +103,6 @@ var loader = new GLTFLoader();
 
 // load player models
 export function init(){
-	client.endpoint = "ws:localhost:2567";
 	{
 		loader.load(
 			// resource URL
