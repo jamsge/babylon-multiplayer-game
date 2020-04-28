@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const colyseus = require('colyseus');
 const monitor = require("@colyseus/monitor").monitor;
+require('dotenv').config()
 var ip = require("ip");
 // const socialRoutes = require("@colyseus/social/express").default;
 global.XMLHttpRequest = require('xhr2').XMLHttpRequest;
@@ -25,6 +26,8 @@ app.use('/', express.static(path.join(__dirname, "client")));
 
 // register your room handlers
 gameServer.define('my_room', BasicRoom);
+
+console.log(process.env.URL);
 
 /**
  * Register @colyseus/social routes

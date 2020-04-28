@@ -121,6 +121,7 @@ export function init(){
 				gltf.scene.rotation.y = Math.PI
 				gltf.scene.position.z += 20;
 				scene.add( gltf.scene );
+				main();
 			},
 			// called when loading is in progresses
 			function ( xhr ) {
@@ -140,7 +141,6 @@ export function init(){
 				console.log(model.animations);
 				scene.add(gltf.scene);
 				clock.start();
-				main();
 			},
 			function ( xhr ) {
 				console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
