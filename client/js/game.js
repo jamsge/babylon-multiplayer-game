@@ -1,10 +1,10 @@
-import * as THREE from './lib/three.module.js';
+	import * as THREE from './lib/three.module.js';
 import { OBJLoader } from './lib/OBJLoader.js';
 import { PointerLockControls } from './lib/PointerLockControls.js';
 import { OrbitControls } from './lib/OrbitControls.js';
 import { GLTFLoader } from './lib/GLTFLoader.js';
 
-export var client = new Colyseus.Client("ws:" + window.host);
+export var client = new Colyseus.Client("ws:" + window.location.host);
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color('black');
