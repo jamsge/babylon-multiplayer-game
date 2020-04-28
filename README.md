@@ -2,12 +2,20 @@
 Hey :D
 This is my simple multiplayer first-person "game" demo made using Javascript. I call it a "game" because currently there are no objectives for players. So it's not really a game. But what else would I call it?
 
+[Here's a live demo that may or may not be online. Press the tiny "Start the game" button!](http://babylon-multiplayer-game-demo.azurewebsites.net)
+
+![Here it is in action!](https://im2.ezgif.com/tmp/ezgif-2-2d51c6bd30c6.gif)
+
 ## :crossed_swords: Usage
 
  1. Clone this repository and install way too many dependencies using `npm install`
  2. Run the game server using `npm start`
- 3. Go to localhost:2567
- 4. :)
+ 3. Go to localhost:2567, press "Start the game"
+
+WASD - movement
+Spacebar - jump
+G - change camera type
+There are two cameras: orbit view and first-person view.
 
 ## Structure
 
