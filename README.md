@@ -13,9 +13,12 @@ This is my simple multiplayer first-person "game" demo made using Javascript. I 
  3. Go to localhost:2567, press "Start the game"
 
 WASD - movement
+
 Spacebar - jump
+
 G - change camera type
-There are two cameras: orbit view and first-person view.
+
+There are two cameras: orbit and first-person. The orbit camera allows for dragging the mouse around to orbit a single point, and the first-person camera gives an FPS style cursor lock camera.
 
 ## Structure
 
