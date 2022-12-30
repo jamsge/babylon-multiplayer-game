@@ -28,7 +28,7 @@
     "ammo.js": "github:kripken/ammo.js#aab297a4164779c3a9d8dc8d9da26958de3cb778",
     "babylonjs": "^4.1.0",
     "babylonjs-loaders": "^4.1.0",
-    "colyseus": "^0.12.0",
+    "colyseus": "^0.14.24",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.16.4",
